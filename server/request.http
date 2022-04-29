@@ -1,0 +1,50 @@
+POST  http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username":"tue12",
+    "password":"1"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username":"tuenguyen",
+    "password":"tuenguyen"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjUzZDMyYmM1ZTAxOTRiMjE1Y2U3YWIiLCJpYXQiOjE2NTA2OTg5MDB9.oJ1sCBYrZ4mnsseg3UqU-ZmbNtdWzdzT-_6PF7sMblE
+
+{
+    "title":"My 4 awd",
+    "description":"r 4act",
+    "url": "rea243  .com",
+    "status": "LEARNED"
+}
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjUzZDMyYmM1ZTAxOTRiMjE1Y2U3YWIiLCJpYXQiOjE2NTA2OTg5MDB9.oJ1sCBYrZ4mnsseg3UqU-ZmbNtdWzdzT-_6PF7sMblE
+
+
+###
+PUT http://localhost:5000/api/posts/625550d6218d0d4d6d3df00c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjUzZDMyYmM1ZTAxOTRiMjE1Y2U3YWIiLCJpYXQiOjE2NTA2OTg5MDB9.oJ1sCBYrZ4mnsseg3UqU-ZmbNtdWzdzT-_6PF7sMblE
+
+{
+    "title":"Vueea",
+    "description":"VUeee",
+    "url":"vueaa.org",
+    "status": "TO LEARN"
+}
+
+### 
+DELETE http://localhost:5000/api/posts/625550d6218d0d4d6d3df00c
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjU1NTA4MDIxOGQwZDRkNmQzZGYwMDQiLCJpYXQiOjE2NDk3NTgzMzZ9.5h2_eN0nlx8HNsMpTP2NxXbkv-ITRNuWjuXO6bikuTg
