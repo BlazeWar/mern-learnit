@@ -22,6 +22,7 @@ const connectDB = async () => {
   }
 };
 
+
 connectDB();
 const app = express();
 app.use(express.json())

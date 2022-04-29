@@ -1,4 +1,4 @@
-export const apiUrl = process.env.NODE_ENV !== 'production' ? 'https://nameless-mountain-37267.herokuapp.com/api': 'somedeployedUrl'
+export const apiUrl = process.env.NODE_ENV !== 'production' ? 'https://afternoon-stream-17124.herokuapp.com/api': 'somedeployedUrl'
 
 export const LOCAL_STORAGE_TOKEN_NAME = 'learnit-mern'
 
